@@ -1,0 +1,15 @@
+<div class="container">
+  <ul>
+    <li *ngFor="let person of result | async">{{ person.name }}</li>
+  </ul>
+</div>
+
+<div class="container-filter">
+  <h3>filter Address Null</h3>
+  <button (click)="onClick()">Filtered</button>
+
+  <app-filtered-adress-null
+    *ngIf="showDiv"
+    [persons]="result"
+  ></app-filtered-adress-null>
+</div>

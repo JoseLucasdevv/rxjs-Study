@@ -1,0 +1,21 @@
+.container {
+  padding-left: 30px;
+  align-items: center;
+  background-color: black;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 50px;
+}
+
+a {
+  color: white;
+  transition: 0.5s;
+}
+a:hover {
+  color: #37a0ff;
+}
+
+.active {
+  color: #37a0ff;
+}
